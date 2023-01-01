@@ -17,6 +17,11 @@ const SignUpSchema = Yup.object().shape({
     [true],
     "Please accept terms and conditons"
   ),
+  additionalInfoFlag: Yup.boolean(),
+  additionalInfo: Yup.string().when("additionalInfoFlag", {
+    is: true,
+    then: Yup.string().required("this field is required"),
+  }),
 });
 
 const SignupForm = () => {
