@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import SigninForm from "../Components/Forms/SignUpForm";
+import SignupFormNew from "../Components/Forms/SignUpFormNew";
 
 const SignUp = ({ loginUser }) => {
   return (
@@ -45,7 +46,8 @@ const SignUp = ({ loginUser }) => {
               Sign up
             </Typography>
             <Box sx={{ mt: 1 }}>
-              <SigninForm />
+              {/* <SigninForm /> */}
+              <SignupFormNew />
             </Box>
           </Box>
         </Grid>
